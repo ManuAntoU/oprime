@@ -1,0 +1,115 @@
+body {
+   
+    font-family: 'Titillium Web', sans-serif;
+   
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    color: #000;
+    font-family:courier,arial,helvetica;
+    font-weight: 200;
+    margin: 0 0 30px;
+}
+label {
+  font-family: "Segoe UI Light";
+    position: block;
+    transform: translateY(6px);
+    left: 13px;
+    color: black;
+    
+    font-size: 22px;
+}
+label .req {
+    margin: 2px;
+    color: black;
+}
+
+
+label.active {
+  
+    left: 2px;
+    font-size: 14px;
+}
+
+
+label.highlight {
+    color: BLACK;
+}
+#input1, textarea {
+  border-radius: 10px;
+    font-size: 22px;
+    display: block;
+    width: 30%;
+    height: 5%;
+    padding: 5px 10px;
+    
+    border: 1px solid BLACK;
+    color:black;
+    position:relative;
+    left:36%;
+  
+}
+#cnum, textarea {
+    border-radius: 10px;
+      font-size: 22px;
+      display: block;
+      width: 30%;
+      height: 5%;
+      padding: 5px 10px;
+      
+      border: 1px solid BLACK;
+      color:black;
+      position:relative;
+      left:36%;
+    
+  }
+
+textarea {
+    border: 2px solid BLACK;
+    resize: vertical;
+    text-align: start;
+    
+
+
+
+}
+.field-wrap {
+    position: relative;
+   margin-bottom: 40px;
+   text-align: center;
+}
+
+       
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 17px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: black;
+    color: #fff;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+    
+  }
+  .button:hover, .button:focus {
+    background:blueviolet;
+  }
+  .button-block {
+    font-size:20px;
+    border-radius: 30px;
+    width: 20%;
+    display: inline-block;
+    
+  }

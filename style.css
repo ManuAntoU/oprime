@@ -1,0 +1,382 @@
+/*utility classes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.clarfix:after{
+	content: "";
+	display: table;
+	clear:both;
+}
+
+
+.buttoncontainer button{
+	padding: 5px 6px;
+	font-size: 15px;
+	width: 15%;
+	border: none;
+	color: white;
+	border-radius: 3px;
+	font-family: 'Raleway', sans-serif;
+	isolation: isolate;
+
+}
+
+.buttoncontainer button:first-of-type{
+	background-color: #E62D35;
+}
+
+.buttoncontainer button:last-of-type{
+	background-color: #3F3F49;
+}
+
+
+
+
+/* Head*/
+
+
+.headercontainer{
+	background: url(eight.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 65%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 3px;
+    isolation: isolate;
+}
+
+.headercontainer ul{
+	margin: 0px;
+}
+.headercontainer li{
+	list-style-type: none;
+	float: left;
+	padding: 6px;
+}
+
+nav a{
+	display: inline-block;
+    width: 20%;
+    height: 30px;
+    background: rgb(255,255,255,.2);
+    border: none;
+    text-decoration: none;
+    padding: 4px;
+    margin: 6px;    
+    margin-top: 40px;
+    color: #000000;
+}
+
+nav a:link{
+    color: #000000;
+}
+nav a:visited{
+	color: violet;
+}
+nav a:hover, nav a:focus{
+	color: #0000ff; 
+	background-color: #FFFFFF;
+}
+nav a:active{
+    color: red;
+    background-color:#FFFAFA;
+}
+
+
+.login{
+    color: #fff;
+    width: 7%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1c8adb;
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+
+
+.navbar-brand img{
+	width: 100px;
+}
+
+.two_content{
+	width: 80%;
+	margin: 80px auto 200px;
+}
+
+
+
+/* Main content*/
+.main_content{
+	width: 80%;
+	margin: 30px auto 0;
+}
+
+
+
+.filter_content{
+	position: sticky;
+	width: 20%;
+	float: left;	font-family: 'Raleway', sans-serif;
+	border: 1px solid #ddd;
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background: linear-gradient(135deg, #1c8adb, white 60% );
+}
+    
+
+
+.filter_content:hover{
+	box-shadow: 0 0 15px 5px rgb(39, 43, 55, 0.15);
+}
+
+
+.filter_list{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	
+}
+
+..filter_list a{
+	float: left;	font-family: 'Raleway', sans-serif;
+	display: inline-block;
+    width: 20%;
+    height: 30px;
+    background: rgb(255,255,255,.2);
+    border: none;
+    text-decoration: none;
+    padding: 4px;
+    margin: 6px;    
+    margin-top: 40px;
+    color: #000000;
+}
+
+
+.filter_content h2{
+	text-align: center;
+}
+
+.filter_list li{
+	list-style: none;
+	padding: 10px;
+}
+
+.filter_list li.active{
+	color: #E62D35;
+}
+
+.video_container{
+	width: 72%;
+	float: right;
+}
+
+.video_search input{
+	width: 90%;
+	padding: 7px;
+	border: 1px solid #ddd;
+}
+
+.video_list_wrapper{
+	float: left;
+	border:  solid #ddd;
+	border-radius: 3px;
+	margin: 2%;
+	padding-top: 50px;
+	display: inline-block;
+	margin-right: 2%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	
+}
+
+.video_list_wrapper:hover{
+	box-shadow: 0 0 15px 5px rgb(39, 43, 55, 0.15);
+}
+
+.video_list_wrapper .buttoncontainer button{
+	width: 49.6%
+}
+
+@media screen and (max-width: 750px){
+	.fliter_content{
+		display: none;
+	}
+
+	.video_container{
+		width: 100%;
+		float: none;
+	}
+
+	.buttoncontainer button{
+		width: 40%;
+	}
+}
+
+
+@media screen and (max-width: 560px){
+	.headercontainer li{
+		float: none;
+		text-align: center;
+	}
+    
+    .navbar-brand{
+    	width: 70px;
+    	height: 28px;
+    	margin-left: auto;
+    	margin-right: auto; 
+    }
+
+	.video_search input{
+		width: 100%;
+	}
+
+	.video_list_wrapper {
+		width: 80%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+
+
+/*image*/
+
+.card{
+	position: relative;
+	width: 600px;
+	height: 350px;
+	margin: 20px;
+	display: inline-block;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 20px;
+}
+
+#batman{
+	background: linear-gradient(135deg,  grey, black 40% );
+}
+
+#superman{
+	background-image: url(supbag1.jpg);
+	background-position: 50% 90%;
+}
+
+#wonderwoman{
+	background-image: url(wonbag.jpg);
+	background-position: 30% 80%;
+	}
+
+.card img{
+	transition: 0.5s;
+	position: absolute;
+	bottom:0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 400px;
+	
+}
+
+.card:hover img{
+	left: 85%;
+	height:450px;
+}
+
+
+.card .content{
+	visibility: hidden;
+	position: relative;
+	width: 50%;
+	left: 20%;
+	padding: 20px 20px 20px 40px;
+	opacity: 0;
+	transition: 0.5s;
+	
+}
+
+.card:hover .content{
+	opacity: 1;
+	visibility: visible;
+	left: 0%;
+}
+
+.card .content h2{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	line-height: 1em;
+	
+}
+
+.card .content h4{
+	color: #fff;
+}
+
+.card .content p{
+	color: #fff;
+	
+}
+
+.card .content a{
+	position: relative;
+	display: inline-block;
+	color: #111;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: #fff;
+	margin-top: 10px;
+	text-decoration: none; 
+	
+}
+
+@media (max-width: 991px){
+
+	.card {
+		position: relative;
+		width: auto;
+		max-width: 600px;
+		transition: 0.5s;
+		align-items: flex-start;
+	}
+
+	.card: hover{
+		height: 600px;
+	}
+
+	.card: hover img{
+		left: 50%;
+		height: 350px;
+	}
+
+	.card .content{
+		width: 100%;
+		left: 0;
+		padding: 40px;
+	}
+}
+
+@media (max-width: 420px){
+	.card .content{
+		padding: 40px; 
+	}
+
+	.card: hover img{
+		height: 300px;
+	}
+}
